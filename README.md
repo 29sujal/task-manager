@@ -1,6 +1,13 @@
-# Task Manager App — MERN Stack
+# Taskify — MERN Stack Task Manager
 
 I built this project as part of my MERN stack internship assignment. It's a full-stack task management app where users can register, log in, and manage their daily tasks. I used React with Vite on the frontend and Node/Express with MongoDB on the backend.
+
+---
+
+## Live Demo
+
+- **Frontend** → https://task-manager-weld-ten-31.vercel.app
+- **Backend API** → https://task-manager-6v68.onrender.com
 
 ---
 
@@ -81,6 +88,7 @@ PORT=5000
 MONGO_URI=mongodb://localhost:27017/taskmanager
 JWT_SECRET=makethissomethinglong
 JWT_EXPIRE=7d
+FRONTEND_URL=http://localhost:5173
 ```
 
 Start the backend:
@@ -141,18 +149,34 @@ userId      — reference to the User who created it
 - Search is debounced (400ms delay) so it doesn't spam the API on every keystroke
 - Each user can only see and manage their own tasks — the backend always filters by userId
 - Edit/delete buttons on task cards only appear on hover to keep the UI clean
+- Priority system (low/medium/high) added as an extra feature beyond the base requirements
 
 ---
 
 ## Deployment
 
-- Backend → Render or Railway (free tier works fine)
-- Frontend → Vercel or Netlify
-- Database → MongoDB Atlas (free 512MB cluster)
+- **Backend** → Render (free tier)
+- **Frontend** → Vercel (free tier)
+- **Database** → MongoDB Atlas (free 512MB cluster)
+
+For deployment, set these environment variables:
+
+**On Render (backend):**
+```
+MONGO_URI=your_atlas_connection_string
+JWT_SECRET=your_secret_key
+JWT_EXPIRE=7d
+FRONTEND_URL=https://your-app.vercel.app
+```
+
+**On Vercel (frontend):**
+```
+VITE_API_URL=https://your-backend.onrender.com
+```
 
 ---
 
 ## Author
 
-**Sujal** — Engineering Student, MERN Stack Developer  
+**Sujal** — B.Tech in CSE , MERN Stack Developer  
 Feel free to reach out if you have any questions about the code.

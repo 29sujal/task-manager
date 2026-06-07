@@ -115,7 +115,7 @@ export default function Dashboard() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#89b4fa] to-[#cba6f7] flex items-center justify-center text-[#11111b] font-bold text-sm">
               ✓
             </div>
-            <span className="text-lg font-extrabold text-[#cdd6f4] tracking-tight">TaskFlow</span>
+            <span className="text-lg font-extrabold text-[#cdd6f4] tracking-tight">Taskify</span>
           </div>
 
           <div className="flex items-center gap-4">

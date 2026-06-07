@@ -52,7 +52,7 @@ export default function Login() {
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#89b4fa] to-[#cba6f7] flex items-center justify-center text-[#11111b] font-bold text-lg">
             ✓
           </div>
-          <span className="text-xl font-extrabold text-[#cdd6f4] tracking-tight">TaskFlow</span>
+          <span className="text-xl font-extrabold text-[#cdd6f4] tracking-tight">Taskify</span>
         </div>
 
         <h1 className="text-2xl font-extrabold text-[#cdd6f4] tracking-tight mb-1">Welcome back</h1>
