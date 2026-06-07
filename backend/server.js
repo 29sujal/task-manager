@@ -7,15 +7,9 @@ dotenv.config()
 
 const app = express()
 
-// Allow requests from your frontend URL
-app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    process.env.FRONTEND_URL
-  ],
-  credentials: true
-}))
-
+// Simple CORS — allows all origins
+// This is fine for development and internship projects
+app.use(cors())
 app.use(express.json())
 
 app.use('/api/auth', require('./routes/authRoutes'))
